@@ -3,12 +3,23 @@
 
 
 Console.Write("Введите число N: ");
-int N = Convert.ToInt32(Console.ReadLine());
-if (N % 2 == 0) 
+string N = Console.ReadLine();
+
+if (Int32.TryParse(N, out int x))
 {
-    Console.Write($"Число {N} четное");
+    if (x % 2 == 0)
+    {
+        Console.Write($"Число {x} четное");
+    }
+    else
+    {
+        Console.Write($"Число {x} не четное");
+    }
 }
 else
 {
-    Console.Write($"Число {N} не четное");
+    Console.Write("Вы ввели не целое число");
+
 }
+
+
