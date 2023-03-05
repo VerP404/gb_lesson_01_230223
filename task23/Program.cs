@@ -21,10 +21,10 @@ void TableWhile(int num)
     }
 }
 
-void TableFor(int num)
-{
-    for (int i = 1; i <= num; i++)
-    {
-        Console.WriteLine($"{i}  {i*i*i}");
-    }
-}
+// void TableFor(int num)
+// {
+//     for (int i = 1; i <= num; i++)
+//     {
+//         Console.WriteLine($"{i}  {i*i*i}");
+//     }
+// }
